@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <!-- cabecera: lo NO visible por el usuario final -->
+  <head>
+	<meta charset="utf-8" />	<!-- para mostrar bien caracteres en español en la página -->
+    <title>Aportar administradores</title>
+	<meta name="description" content="Aportar de administradores">
+  </head>
+  
+  <!-- cuerpo: lo  visible por el usuario final -->
+  <body>
+	<header>
+		<img src="Imagenes/logo.jpg" width="50" height="50px" alt="Logo de Hongopedia">
+		<h1>Hongopedia</h1>
+		<nav>
+			<table>
+				<tr>
+					<td><a href="inicio.html" target="_self" title="Ir a la página principal" rel="start">Inicio</a></td>
+					<td><a href="buscar.html" target="_self" title="Ir a la página para buscar">Buscar</a></td>
+					<td>Aportar</td>
+					<td><a href="mi_cuenta.html" target="_self" title="Ir a la página de gestión de mi cuenta">Cuenta</a></td>
+					<td><a href="acerca_de.html" target="_self" title="Ir a la página acerca_de">Acerca de</a></td>
+				</tr>
+			</table>
+		</nav>
+	</header>
+	<section>
+		<h1>Aportar</h1>
+		<p>Administrador</p>
+		<form method="post" action="subir_a_base_csv.php">
+			Aportar desde un csv <input type="file" id="csv_aportadoADM" name="csv_aportadoADM" accept="archivos_csv/*.csv"> <input type="submit" value="Subir CSV" name="Boton_subir_CSV_ADM" />
+		</form> <br />
+		<form method="post" action="subir_a_base_tupla.php">
+			Nombre científico <input type="text" id="nombre_cientifico_aportadoADM" name="nombre_cientifico_aportadoADM" size="25" maxlength="50" ><br />
+			Nombre vulgar <input type="text" id="nombre_vulgar_aportadoADM" name="nombre_vulgar_aportadoADM" size="25" maxlength="50" ><br />
+			Familia <input type="text" id="familia_aportadoADM" name="familia_aportadoADM" size="25" maxlength="50" ><br />
+			Hábitat <input type="text" id="hábitat_aportadoADM" name="hábitat_aportadoADM" size="25" maxlength="30" ><br />
+			Color <input type="text" id="color_aportadoADM" name="color_aportadoADM" size="25" maxlength="30" ><br />
+			Áreas de conservación
+			<select id="area_de_conservacion_aportadoADM" name="area_de_conservacion_aportadoADM" size=1>
+				<option selected value="0">Seleccionar opción</option>
+				<option value="1">Área de conservación ...?</option>
+				<option value="2">Obtener de la base de datos?</option>
+				<option value="3">Obtener de la base de datos?</option>
+			</select><br />
+			Hábito
+			<select id="habito_aportadoADM" name="habito_aportadoADM" size=1>
+				<option selected value="0">Seleccionar opción</option>
+				<option value="gregario">Gregario</option>
+				<option value="disperso">Disperso</option>
+				<option value="solitario">Solitario</option>
+			</select><br />
+			Forma
+			<select id="forma_aportadoADM" name="forma_aportadoADM" size=1>
+				<option selected value="0">Seleccionar opción</option>
+				<option value="campana">Campana</option>
+				<option value="xx">XX</option>
+				<option value="xx">XX</option>
+				<option value="xx">XX</option>
+				<option value="xx">XX</option>
+			</select><br />
+			Inicio temporada
+			<select id="temporada_aportadoADM" name="temporada_aportadoADM" size=1>
+				<option selected value="0">Seleccionar opción</option>
+				<option value="enero">Enero</option>
+				<option value="febrero">Febrero</option>
+				<option value="marzo">Marzo</option>
+				<option value="abril">Abril</option>
+				<option value="mayo">Mayo</option>
+				<option value="junio">Junio</option>
+				<option value="julio">Julio</option>
+				<option value="agosto">Agosto</option>
+				<option value="setiembre">Setiembre</option>
+				<option value="octubre">Octubre</option>
+				<option value="noviembre">Noviembre</option>
+				<option value="diciembre">Diciembre</option>
+			</select><br />
+			Clasificación
+			<select id="clasificación_aportadoADM" name="clasificación_aportadoADM" size=1>
+				<option selected value="0">Seleccionar opción</option>
+				<option value="1">Comestible</option>
+				<option value="2">Venenoso</option>
+				<option value="3">Alucinógeno</option>
+				<option value="4">Desconocido</option>
+			</select><br />
+			Píleo <input type="text" id="pileo_aportadoADM" name="pileo_aportadoADM" size="25" maxlength="30" ><br />
+			Himenóforo <input type="text" id="himenoforo_aportadoADM" name="himenoforo_aportadoADM" size="25" maxlength="30" ><br />
+			Estípite <input type="text" id="estipite_aportadoADM" name="estipite_aportadoADM" size="25" maxlength="30" ><br />
+			Fecha del avistamiento <input type="text" id="fecha_del_avistamiento_aportadoADM" name="fecha_del_avistamiento_aportadoADM" placeholder="dd/mm/yyyy" size="25" maxlength="30" ><br />
+			Altura del avistamiento <input type="text" id="altura_del_avistamiento_aportadoADM" name="altura_del_avistamiento_aportadoADM" size="25" maxlength="30" ><br />
+			Observaciones <textarea id="observaciones_aportadoADM" rows="10" cols="30" wrap="soft"></textarea><br />
+			Imagen superior <input type="file" id="imagen_superior_aportadoADM" name="imagen_superior_aportadoADM" accept="imagenes/*.jpg"> <br />
+			Imagen inferior <input type="file" id="imagen_inferior_aportadoADM" name="imagen_inferior_aportadoADM" accept="imagenes/*.jpg"> <br />
+			Imagen lateral <input type="file" id="imagen_lateral_aportadoADM" name="imagen_lateral_aportadoADM" accept="imagenes/*.jpg"> <br />
+			Relación mano-hongo <input type="file" id="imagen_relacion_mano-hongo_aportadoADM" name="imagen_relacion_mano-hongo_aportadoADM" accept="imagenes/*.jpg"> <br />
+			<input type="submit" value="Subir datos" name="Boton_subir_tupla_ADM" /> <br />
+		</form> <br />
+	</section>
+  </body>
+</html>

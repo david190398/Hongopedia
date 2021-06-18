@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="es"> 
+  <head>
+  <link  rel="icon"   href="img/mushroom.svg" type="image/png" /> 
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="author" content="Grupo Gestion de Hongos"/>
+  <meta name="keywords" content="hongos, wiki, gestion"/>
+  <meta name="generator" content="Grupo Gestion de Hongos" />
+  <title>Gestion de Hongos</title>
+  <link href="css/screenV3.css" rel="stylesheet"/>
+  </head>   
+    <body> 
+      <header id="encabezado_sitio">
+        <img id="site_logo" src="img/mushroom.svg" alt="Logo del sitio" width="80" height="60"/>
+        <h1>Hongopedia</h1>
+      </header>
+      <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="html/buscar.html">Buscar</a></li>
+            <li><a href="html/aportar.html">Aportar</a></li>
+            <li><a href="html/cuenta.html">Cuenta</a></li>
+            <li><a href="html/acerca.html">Acerca de</a></li>
+          </ul>
+      </nav>
+      <main>
+        <section id ="area_principal">
+          <section id="imagen_principal">
+            <a><img src="img/mushroomGrande.svg" alt="Sección intro" width="500" height="500"/></a>
+          </section>
+          <section id="area_texto">
+            <h2>Gestión de hongos</h2>
+            <p>Esta página se encarga de recopilar información sobre hongos para </br>que estén al acceso de todos, 
+              cada hongo registrado tiene una ficha</br> con más detalles. </p>
+            <p>Entre las principales funcionalidades se pueden destacar:</p>
+            <p>Base de datos dinámica: los usuarios pueden aportar a la base y hacer</br> que esta crezca, de esta forma
+              involucramos a los usarios y nos aseguramos </br>que la base nunca se estanque.</p>
+            <p>Filtros de búsqueda específicos: Permite encontrar el hongo deseado 
+             rápidamente </br>y facilita la navegación.</p>
+             <form method="post" action="funDesc.php">
+              <input id="descargarCSVCompleto" type="submit" name="button1" class="button" value="Descargar información de los hongos en CSV" />
+            </form>
+          </section>
+        </section>
+        
+        </main>
+      <footer>
+      </footer>
+    </body>
+</html>
+

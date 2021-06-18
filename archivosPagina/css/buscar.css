@@ -1,0 +1,178 @@
+*
+{
+/*  magin: 5px;
+  border: 1px solid orange;
+  padding: 5px;
+*/
+  font-family: Helvetica;
+}
+
+
+
+.nombrecentrado {
+	text-align: center ;
+	margin-top: 3% ;
+}
+
+td {
+	font-weight: bold ; 
+	padding: 1% ;
+}
+
+/* -------------------------------------- */
+
+
+
+#encabezado_sitio {
+    display: flex;
+    border-bottom: 3px double gray;
+    background-color: #F8CECC;
+    margin-bottom: -18px;
+    margin-left: -30px;
+    margin-top: -10px;
+    margin-right: -7px;
+}
+
+#encabezado_sitio>img {
+  margin-left: 20px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+#encabezado_sitio h1 {
+  margin-bottom: -6px;
+  margin-left: -5px;
+
+}
+
+#encabezado_sitio img:hover{
+  animation-name: ray;
+  animation-duration: 1s;
+}
+
+#area_texto{
+    margin-left: 25px;
+    margin-top: 56px;
+}
+
+img:hover {
+  animation-name: miss;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#area{
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF2CC;
+}
+
+nav a {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h2{
+  margin-bottom: -10px;
+}
+
+#secciones section{
+  margin-left: 5px;
+}
+
+main{
+  background-color: #FFF2CC;
+  margin-top: 18px;
+}
+
+nav {
+    margin-left: -62px;
+    margin-right: -7px;
+}
+
+nav>ul
+{
+  display: flex;
+  border: 1px solid black;
+  margin-bottom: -18px;
+
+  background-color: white;
+}
+
+nav>ul>li {
+  display: flex;
+  border: 1px solid black;
+
+  padding: 0 2em;
+}
+
+@media screen and (max-width: 650px)
+{
+  nav>ul
+  {
+    flex-direction: column;
+  }
+}
+
+h1{
+    margin-left: 30px;
+}
+
+nav>button{
+  background-color: white;
+  font-family:var(Buttom_family);
+  text-decoration:none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-self:auto;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  font-size:15px;
+  color:black;
+  text-decoration:none;
+  border-right:solid;
+  margin-left: 55px;
+}
+
+.botonbuscar {
+	margin-top: 10px ;
+	margin-left: 42% ;
+	color: black ;
+	width: 15%;
+	
+	
+	text-decoration:none;
+	font-size:14px;
+	padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+	
+	border:solid;
+	
+	border-top-color:grey;
+	border-left-color:grey;
+	border-right-color:black;
+	border-bottom-color:black;
+
+	border-top-width: 2px;
+	border-left-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+	background-color: white;
+	border-radius:7px;
+}
